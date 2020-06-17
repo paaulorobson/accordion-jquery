@@ -1,4 +1,4 @@
-@media (min-width: 320px) and (max-width: 1024px){
+
 
     *{
         margin: 0;
@@ -9,6 +9,13 @@
         box-sizing: border-box;
         font-family: 'Roboto', sans-serif;
     }
+
+    .container {
+        width: 600px;
+        margin: 20px auto;
+        border: 1px solid #555;
+        box-shadow: 5px 10px 15px #555;
+    } 
 
     .item-header{
         display: flex;
@@ -38,5 +45,5 @@
           font-size: 20px;
           font-weight: 600;
       }
-}
+
 
