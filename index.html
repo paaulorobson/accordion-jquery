@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+   
+    <title>Accordion com jquery (só mobile)</title>
+</head>
+<body>
+
+    <div class="cdc-accordion-item">
+        <div class="item-header">
+            <h3>Institucional</h3>
+            <span class="icon">+</span>
+        </div>
+        <ul class="content-body">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+    </div>
+
+
+    <div class="cdc-accordion-item">
+        <div class="item-header">
+            <h3>Blog</h3>
+            <span class="icon">+</span>
+        </div>
+        <ul class="content-body">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+    </div>
+
+    <div class="cdc-accordion-item">
+        <div class="item-header">
+            <h3>Atendimento</h3>
+            <span class="icon">+</span>
+        </div>
+        <ul class="content-body">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+    </div>
+
+   
+
+    
+
+
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+
+        $(".item-header").click(function(){
+            $(".cdc-accordion-item").removeClass("active")
+            $(this).parent().addClass("active")
+            $(".icon").text("+")
+            $(this).children(".icon").text("-")
+        })
+        
+    </script>
+    
+</body>
+</html>
