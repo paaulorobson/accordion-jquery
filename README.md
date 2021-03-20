@@ -1,3 +1,3 @@
 # accordion-jquery
 
-Realizando uma função de Acoordion com Jquery
+Realizando uma função de Accordion com Jquery
